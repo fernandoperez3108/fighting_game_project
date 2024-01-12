@@ -1,128 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fighting Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: 'Press Start 2P', cursive;
-      }
-    </style>
-  </head>
-</html>
-<body style="background-color: black;">
-  <!-- red container div -->
-  <div style="display: flex; align-items: center; justify-content: center; height: 95vh;" >
-    <!-- smaller red container div -->
-    <div
-      style="
-        position: absolute;
-        display: flex;
-        width: 89%;
-        align-items: center;
-        padding-top: 100px;
-        align-self: flex-start;
-      "
-    >
-      <!-- player health -->
-      <div
-        style="
-          position: relative;
-          width: 100%;
-          display: flex;
-          justify-content: flex-end;
-          border-top: 4px solid white;
-          border-left: 4px solid white;
-          border-bottom: 4px solid white;
-        "
-      >
-        <div style="background-color: red; height: 30px; width: 100%"></div>
-        <div
-          id="playerHealth"
-          style="
-            position: absolute;
-            background: #78cf45;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-          "
-        ></div>
-      </div>
-
-      <!-- timer -->
-      <div
-        id="timer"
-        style="
-          background-color: black;
-          width: 100px;
-          height: 50px;
-          flex-shrink: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          border: 4px solid white;
-        "
-      >
-        10
-      </div>
-      <!-- enemy health -->
-      <div
-        style="
-          position: relative;
-          width: 100%;
-          border-top: 4px solid white;
-          border-bottom: 4px solid white;
-          border-right: 4px solid white;
-        "
-      >
-        <div style="background-color: red; height: 30px"></div>
-        <div
-          id="enemyHealth"
-          style="
-            position: absolute;
-            background: #78cf45;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-          "
-        ></div>
-      </div>
-      <div></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=+, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Fighting Game</title>
+</head>
+<body>
+  <br>
+  <br>
+  <div class="title"><h1>Fighting game</h1></div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="player">
+      <p>controls <br>player</p>
+      <img src="https://static.vecteezy.com/system/resources/previews/011/484/037/non_2x/pixel-art-keys-w-a-s-d-computer-keys-icon-for-8bit-game-on-white-background-vector.jpg" alt="controls player" width="200">
+      <p>
+        W:jump <br><br>
+        A:left <br><br>
+        D:right <br><br>
+        S:attack
+      </p>
     </div>
-    <div
-      id="displayText"
-      style="
-        position: absolute;
-        color: white;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: none;
-      "
-    >
-      Tie
+    <div class="enemy">
+        <p>controls <br>enemy</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/011/484/043/original/pixel-art-keyboard-arrow-keys-keyboard-play-keys-icon-for-8bit-game-on-white-background-vector.jpg" alt="controls enemy" width="200">
+        <p>
+          ArrowUp: <br> jump <br><br>
+          ArrowLeft: <br> left <br><br>
+          ArrowRight: <br> right <br><br>
+          ArrowDown: <br> attack
+        </p>
     </div>
-    <canvas></canvas>
   </div>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="js/utils.js"></script>
-  <script src="js/classes.js"></script>
-  <script src="index.js"></script>
+  <br>
+  <br>
+  <button onclick="location.href='/Game.html'">Start Game</button>
 </body>
+</html>

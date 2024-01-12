@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: white;
+}
+
+.enemy {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+  background-color: white;
+}
+body {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+button{  
+  width: 58%;
+  height: 80px;
+  padding-top: 10px;
+  align-self: center;
+  background-color: rgb(86, 110, 28);
+  
+}
+
+@media (min-width: 1000px) {
+  button:hover {
+    background: rgb(179, 255, 2);
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.title{
+  width: 58%;
+  border: 5px solid black;
+  align-self: center;
+  background-color: rgb(144, 190, 37)
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
